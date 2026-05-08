@@ -277,6 +277,27 @@
         },
         "operationId": "7bcb44d4-d40f-4f3a-bc14-81c538221508"
       }
+    },
+    "/add": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "Adds numbers",
+        "description": "",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "default",
+            "module": "$import(./modules/hello-world)",
+            "options": {}
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "adds-numbers"
+      }
     }
   },
   "tags": [
